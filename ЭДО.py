@@ -15,6 +15,7 @@ import re
 import sys
 import os
 
+
 # функция процесса ЭДО
 def process_edo(input_path, output_path):
 
@@ -626,8 +627,8 @@ def process_edo(input_path, output_path):
             'Справочник': manual
             }
 
-        # # наименование отчета
-        # excel_filename = 'Отчет ЭДО.xlsx'
+        # наименование отчета
+        excel_filename = 'Отчет ЭДО.xlsx'
 
         # создаем объект для записи в Excel
         with pd.ExcelWriter(excel_filename) as writer:
