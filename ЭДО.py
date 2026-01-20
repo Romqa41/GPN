@@ -628,7 +628,7 @@ def process_edo(input_path, output_path):
             }
 
         # наименование отчета
-        excel_filename = 'Отчет ЭДО.xlsx'
+        excel_filename = output_path if output_path.endswith('.xlsx') else output_path + '.xlsx'
 
         # создаем объект для записи в Excel
         with pd.ExcelWriter(excel_filename) as writer:
